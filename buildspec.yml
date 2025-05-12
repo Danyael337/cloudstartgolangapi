@@ -13,4 +13,4 @@ phases:
       # - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
       # - docker login -u yacloud -p yacloud1 https://git.systementor.se
       - docker login -u daniel.aggerstam@yaelev.se -p yacloud1 https://git.systementor.se
-      - docker push git.systementor.se/yacloud/stensax424
+      - docker push git.systementor.se/daniel.aggerstam@yaelev.se/stensax424
