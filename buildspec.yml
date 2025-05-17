@@ -1,9 +1,9 @@
 version: 0.2
 
-# env:
-#   parameter-store:
-#     DOCKER_USERNAME: "DOCKER_USERNAME"
-#     DOCKER_PASSWORD: "DOCKER_PASSWORD"
+env:
+  parameter-store:
+    DOCKER_USERNAME: "DOCKER_USERNAME"
+    DOCKER_PASSWORD: "DOCKER_PASSWORD"
 
 phases:
   build:
@@ -11,8 +11,8 @@ phases:
       # - docker build -t git.systementor.se/yacloud/cowsay0325 .
       # - docker build -t git.systementor.se/daniel.aggerstam@yaelev.se/stensax424 .
       - docker build -t git.systementor.se/yacloud/stensax0424 .
-      # - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
-      - docker login -u yacloud -p yacloud1 https://git.systementor.se
+      - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
+      # - docker login -u yacloud -p yacloud1 https://git.systementor.se
       # - docker login -u daniel.aggerstam@yaelev.se -p yacloud1 https://git.systementor.se
       - docker push git.systementor.se/yacloud/stensax0424
       # - docker push git.systementor.se/daniel.aggerstam@yaelev.se/stensax424
