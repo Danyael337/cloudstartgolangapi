@@ -13,7 +13,7 @@ phases:
       # - docker build -t git.systementor.se/yacloud/stensax0424 .
       - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD https://git.systementor.se
       # - docker login -u yacloud -p yacloud1 https://git.systementor.se
-      # - docker login -u daniel.aggerstam@yaelev.se -p hejsan123 https://git.systementor.se
+      # - docker login -u daniel.aggerstam@yaelev.se -p hejsan123/GSM2075@! https://git.systementor.se
       # - docker push git.systementor.se/yacloud/stensax0424
       # - docker push git.systementor.se/daniel.aggerstam@yaelev.se/stensax424
       - docker push git.systementor.se/daniel/stensax_dimage
