@@ -13,7 +13,7 @@ var config Config
 var theRandom *rand.Rand
 
 func start(c *gin.Context) {
-	c.Data(http.StatusOK, "application/text", []byte("Tjena"))
+	c.File("./static/index.html")
 }
 
 func enableCors(c *gin.Context) {
@@ -80,6 +80,10 @@ func main() {
 		config.Database.Port)
 
 	router := gin.Default()
+
+	// Serve static files
+	router.Static("/static", "./static")
+
 	router.GET("/", start)
 	router.GET("/api/play", apiPlay)
 	router.GET("/api/stats", apiStats)
